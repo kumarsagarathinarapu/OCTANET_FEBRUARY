@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #main{
+            width: 100%;
+
+        }
+        .top{
+            width: 100%;
+            min-height: 57.5vh;
+            background-size: cover;
+            background-position: center;
+            background-image: url(./pexels-annesophie-parent-2105416.jpg);
+            padding-top: 4%;
+        }
+        .top.overlay{
+            position: relative;
+            width: 100%;
+            min-height: inherit;
+            background-color: rgba(0, 0, 0, 0.361);
+        }
+        .text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            padding: 0 10vh;
+            color: rgb(13, 13, 13);
+        }
+        .text h1{
+            font-size: 4vw;
+            font-weight: 600;
+        }
+        .text .image{
+            background-image: url(./pexels-mountains-esquivel-1586298.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            width: 220px;
+        }
+        .rtext{
+            display: flex;
+            width: 25%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .rtext p{
+            font-size: 12px;
+
+        }
+        .bottom{
+            display: flex;
+            width: 100%;
+            min-height: 40vh;
+        }
+        .b1{
+            width: 30%;
+            min-height: inherit;
+            background-image: url(./pexels-eberhard-grossgasteiger-707344.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .b1 h1{
+            text-align: center;
+            padding: 30px;
+        }
+        .b1 p{
+            color: white;
+            text-align: center;
+            padding: 70px;
+        }
+        .b2{
+            width: 30%;
+            min-height: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        .b2 .up{
+            background-image: url(./pexels-bill-white-165537.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 20vh;
+            width: 100%;
+            background-position: center;
+        }
+        .b2 .down{
+            width: 100%;
+            min-height: 22.5vh;
+            background-image: url(./pexels-eberhard-grossgasteiger-707344.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .b2 .down .overlay{
+            position: relative;
+            width: 100%;
+            min-height: 22.5vh;
+            background-color: rgba(66, 51, 121, 0.286);
+        }
+        .b3{
+            width: 40%;
+            min-height: inherit;
+            background-image: url(./pexels-mountains-esquivel-1586298.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .b3 .overlay{
+            justify-content: right;
+            position: relative;
+            margin-left: 50%;
+            width: 50%;
+            padding: 4vw 3vh;
+        }
+        .b3 p{
+            color: white;
+            padding: 1.2vh;
+        }
+        @media(max-width:500px){
+            .text{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .text h1{
+                font-size: 5vh;
+            }
+            .text .image{
+                height: 200px;
+                width: 140px;
+                margin-top: 20px;
+            }
+            .rtext{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .rtext p{
+                margin-top: 10px;
+            }
+            .icons{
+                margin-top: 10px;
+            }
+            .bootm{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .b1{
+                width: 100%;
+            }
+            .b2{
+                width: 100%;
+            }
+            .b2 .up{
+                min-height: 20vh;
+            }
+            .b3{
+                width: 100%;
+                background-position: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="top">
+            <div class="overlay">
+                <div class="text"><h1>Images</h1>
+                    <div class="image"></div>
+                    <div class="rtext">
+                        <p>Mesmerizing</p><p>Astonishing</p>
+                    </div>
+                    <div class="icons">
+                        <i class="ri-twitter-fill"></i>
+                        <i class="ri-instagram-fill"></i>
+                        <i class="ri-facebook-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="b1">
+                <h1>Popular</h1>
+                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit.
+                    Excepturi unde nihil maxime? Consectetur,incidunt ratione?</p>
+            </div>
+            <div class="b2">
+                <div class="up">
+                    <center><h1 style="color: rgb(5, 4, 4);">Latest</h1></center>
+                    <p style="color: white; text-align: center;padding: 25px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ut earum!</p>
+                </div>
+                <div class="down">
+                    <div class="overlay">
+                        <h1>More...</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="b3">
+                <div class="overlay">
+                    <p>privacy policy</p>
+                    <p>Terms and conditions</p>
+                    <p>contact</p>
+                    <p>About us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
